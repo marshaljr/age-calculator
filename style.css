@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* @font-face {
+  font-family: Poppins;
+  src: url(./assets/fonts/Poppins-Regular.ttf),
+    url(./assets/fonts/Poppins-Bold.ttf),
+    url(./assets/fonts/Poppins-ExtraBold.ttf),
+    url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+} */
+
+body {
+  height: 100vh;
+  background-color: hsl(0, 0%, 86%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 600px;
+  padding: 28px;
+  border-radius: 20px 20px 60px 20px;
+}
+
+.column-1 {
+  display: flex;
+  gap: 30px;
+}
+
+.box {
+  font-family: Poppins;
+  font-weight: 800;
+  width: 120px;
+  padding: 8px;
+  font-size: 22px;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 10px;
+}
+
+.text {
+  font-family: Poppins;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: hsl(0, 1%, 44%);
+}
+
+.text label {
+  letter-spacing: 2 px;
+}
+
+.mid {
+  display: flex;
+  align-items: center;
+}
+
+.mid hr {
+  flex: 1;
+  border: 1px solid hsl(0, 0%, 86%);
+}
+
+.d-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  border: 0;
+  padding: 18px;
+  height: 66px;
+  width: 66px;
+}
+.d-arrow:hover {
+  background-color: hsl(0, 0%, 8%);
+  transition: 0.4s;
+}
+.output {
+  display: flex;
+  flex-direction: column;
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 50px;
+  font-style: italic;
+}
+.output .num-color {
+  color: hsl(259, 100%, 65%);
+  padding-right: 6px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
